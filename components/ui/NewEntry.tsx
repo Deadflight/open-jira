@@ -8,7 +8,7 @@ const NewEntry: FC = () => {
   const [inputValue, setInputValue] = useState('')
   const [touched, setTouched] = useState(false)
 
-  const { addEntry } = useContext(EntriesContext)
+  const { addEntry, refreshEntries } = useContext(EntriesContext)
   const { setIsAddingEntry, isAddingEntry } = useContext(UIContext)
   
 
@@ -28,6 +28,7 @@ const NewEntry: FC = () => {
     setIsAddingEntry(false)
     setInputValue('')
     setTouched(false)
+    refreshEntries()
   }
 
   return (
