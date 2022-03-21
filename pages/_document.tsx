@@ -19,6 +19,7 @@ class MyDocument extends Document {
           <html lang="en" />
           <meta property="og:type" content="website"/>
           <meta property="og:url" content="https://opens-jira-deadflight.herokuapp.com/"/>
+          <meta property="og:description" content="Open Jira TO DO Web App similar to Jira"/>
           <meta property="og:image" content="https://portfolio-nextjs-sigma.vercel.app/images/open-jira.png" />
 
         </Head>
