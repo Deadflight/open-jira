@@ -30,7 +30,7 @@ export const connect = async () => {
 
   await mongoose.connect(process.env.MONGODB_URI || '')
   mongoConnection.isConnected = 1;
-  console.log('MongoDB connected', process.env.MONGODB_URI);
+  console.log('MongoDB connected');
 }
 
 export const disconnect = async () => {
