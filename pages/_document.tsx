@@ -17,6 +17,7 @@ class MyDocument extends Document {
           />
           <link rel='shortcut' href='/favicon.ico' />
           <html lang="en" />
+          <meta property='og:title' content='Open Jira'/>
           <meta property="og:type" content="website"/>
           <meta property="og:url" content="https://opens-jira-deadflight.herokuapp.com/"/>
           <meta property="og:description" content="Open Jira TO DO Web App similar to Jira"/>
