@@ -15,7 +15,7 @@ Rename the file **.env.template** to **.env**
 - MongoDB URL Local:
 
 ```
-MONGO_URL=mongodb://localhost:27017/entriesdb
+MONGODB_URI=mongodb://localhost:27017/entriesdb
 ```
 
 - Rebuild node modules and run Next
