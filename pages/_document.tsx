@@ -16,6 +16,11 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
           />
           <link rel='shortcut' href='/favicon.ico' />
+          <html lang="en" />
+          <meta property="og:type" content="website"/>
+          <meta property="og:url" content="https://opens-jira-deadflight.herokuapp.com/"/>
+          <meta property="og:image" content="https://portfolio-nextjs-sigma.vercel.app/images/open-jira.png" />
+
         </Head>
         <body>
           <Main />
