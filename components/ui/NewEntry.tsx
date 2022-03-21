@@ -1,5 +1,6 @@
 import { Add, SaveOutlined } from "@mui/icons-material"
 import { Box, Button, TextField } from "@mui/material"
+import { useSnackbar } from "notistack"
 import { ChangeEvent, FC, useContext, useState } from "react"
 import { EntriesContext } from "../../context/entries"
 import { UIContext } from "../../context/ui"
@@ -11,6 +12,8 @@ const NewEntry: FC = () => {
   const { addEntry, refreshEntries } = useContext(EntriesContext)
   const { setIsAddingEntry, isAddingEntry } = useContext(UIContext)
   
+  const { enqueueSnackbar } = useSnackbar();
+
 
   const onTextFieldChanges = (event: ChangeEvent<HTMLInputElement>) => {
     setInputValue(event.target.value)
@@ -54,7 +57,7 @@ const NewEntry: FC = () => {
                 variant="text"
                 onClick={onCancel}
               >
-                Cancelar
+                Cancel
               </Button>
               <Button
                 variant="outlined"
@@ -62,7 +65,7 @@ const NewEntry: FC = () => {
                 endIcon={<SaveOutlined />}
                 onClick={onSave}
               >
-                Guardar
+                Save
               </Button>
             </Box>
           </>
@@ -74,7 +77,7 @@ const NewEntry: FC = () => {
             variant='outlined'
             onClick={() => setIsAddingEntry(true)}
           >
-            Agregar Tarea
+            Add Entry
           </Button>
         )
       }

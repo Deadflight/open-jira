@@ -6,8 +6,9 @@ interface ContextProps {
 
   //Methods
   addEntry: (description: string) => void; // Add new entry see how we declare the type of the method
-  updateEntry: (entry: Entry) => void;
+  updateEntry: (entry: Entry, showSnackbar?: boolean | undefined) => void;
   refreshEntries: () => void;
+  deleteEntry: (entry: Entry) => void;
 }
 
 export const EntriesContext = createContext({} as ContextProps)
